@@ -1,0 +1,14 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  of-fail:
+    lang: python3
+    handler: ./fail
+    image: embano1/of-fail:latest
+    environment:
+      write_debug: true
+      read_debug: true
+    annotations:
+      topic: "VmPoweredOnEvent,VmPoweredOffEvent"
