@@ -11,4 +11,4 @@ functions:
       write_debug: true
       read_debug: true
     annotations:
-      topic: ClusterCreatedEvent
+      topic: "ClusterCreatedEvent,DrsVmPoweredOnEvent,VmPoweredOnEvent,VmPoweredOffEvent"
