@@ -6,7 +6,7 @@ functions:
   of-fail:
     lang: python3-http
     handler: ./fail
-    image: embano1/of-fail:latest
+    image: embano1/of-fail:500-always
     environment:
       write_debug: true
       read_debug: true
